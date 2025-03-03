@@ -19,8 +19,9 @@ export class LocationService {
         altitude: null,
         altitudeAccuracy: null,
         heading: null,
-        speed: null
-      });
+        speed: null,
+        toJSON: () => ({})
+      } as GeolocationCoordinates);
     }
     
     return from(
@@ -41,8 +42,9 @@ export class LocationService {
           altitude: null,
           altitudeAccuracy: null,
           heading: null,
-          speed: null
-        });
+          speed: null,
+          toJSON(){ return{} }
+        } as GeolocationCoordinates);
       })
     );
   }

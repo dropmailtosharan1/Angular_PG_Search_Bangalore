@@ -67,7 +67,7 @@ import { MapViewComponent } from '../../components/map-view/map-view.component';
                 <div class="detail-item">
                   <span class="detail-label">Type</span>
                   <span class="detail-value">
-                    {{ hostel.gender === 'male' ? 'Men\'s PG' :  hostel.gender === 'female' ? 'Women\'s PG' : 'Unisex PG' }} </span>
+                    {{ hostel.gender === 'male' ? "Men's PG" :  hostel.gender === 'female' ? "Women's PG" : 'Unisex PG' }} </span>
                 </div>
                 <div class="detail-item">
                   <span class="detail-label">Rating</span>
